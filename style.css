@@ -55,6 +55,12 @@ nav a:first-child {
     font-weight: 700;
 }
 
+footer {
+    background-color:#48418e;
+    color:#e5e5e5;
+    text-align: center;
+}
+
 nav a:hover {
     background-color: none;
     color:#f1e1fa;
@@ -66,6 +72,7 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-position-x: left;
     color: #f1e1fa;
     padding: 1.2rem;
 }
@@ -78,6 +85,9 @@ nav a:hover {
 .tlacitka {
     display: flex;
     flex-direction: column;
+    margin:1rem;
+    padding: 1rem;
+    
 }
 
 .tlacitka a {
@@ -90,7 +100,21 @@ nav a:hover {
     flex-grow: 1;
     text-align: center;
     background-color:transparent;
+    font-weight: 400;
+
 }
+
+.tlacitko-1{
+    margin:1rem;
+    padding-bottom: 0.5rem;
+    height: 60px;
+}
+
+.tlacitko-2{
+    margin: 1rem;
+    height: 60px;
+}
+
 a:hover{
     background-color: #6e4c9b
 }
@@ -108,3 +132,30 @@ h3 {
     margin: 0.6rem;
 }
 
+.ponuka{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+    }
+
+.ponuka h3{
+    color:#4d468f;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.ponuka p{
+    color:black;
+}
+
+.ponuka,
+.cestuj,
+.zazitkuj{
+    margin: 1rem;
+    padding: 1rem;
+}
