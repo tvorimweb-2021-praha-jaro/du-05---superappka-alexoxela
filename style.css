@@ -33,7 +33,7 @@ body {
 /* ----- zde začni psát vlastní CSS ----- */
 
 .obal {
-    width: auto;
+    width:auto;
 }
 
 nav a {
@@ -48,7 +48,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    
+    align-items: center;
 }
 
 nav a:first-child {
@@ -56,14 +56,14 @@ nav a:first-child {
 }
 
 footer {
-    background-color:#48418e;
+    background-color:#6a528a; /*tu sa mi viac paci tato farba*/
     color:#e5e5e5;
     text-align: center;
 }
 
 nav a:hover {
-    background-color: none;
-    color:#f1e1fa;
+    background-color: #25133d;
+    color:#e5e5e5;
 }
 
 
@@ -77,6 +77,13 @@ nav a:hover {
     padding: 1.2rem;
 }
 
+.hlavna,
+h1,
+h2{
+    padding: 1rem;
+    margin: 1rem;
+}
+
 .mobil {
     display: none;
     
@@ -85,9 +92,10 @@ nav a:hover {
 .tlacitka {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-basis: auto;
     margin:1rem;
     padding: 1rem;
-    
 }
 
 .tlacitka a {
@@ -97,11 +105,10 @@ nav a:hover {
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
-    flex-grow: 1;
     text-align: center;
     background-color:transparent;
     font-weight: 400;
-
+    background-color: #6a528a; /*tu sa mi viac paci tato farba*/
 }
 
 .tlacitko-1{
@@ -116,7 +123,8 @@ nav a:hover {
 }
 
 a:hover{
-    background-color: #6e4c9b
+    background-color:transparent;
+    border:0.1rem solid #f1e1fa;
 }
 
 h1 {
@@ -124,22 +132,22 @@ h1 {
     font-weight: 400;
     margin: 0;
 }
+
 h2 {
     font-weight: 300;
     line-height: 1.5;
 }
+
 h3 {
     margin: 0.6rem;
 }
 
 .ponuka{
-    display: flex;
-    flex-direction: column;
     text-align: center;
     margin: 1rem;
     padding: 1rem;
-    align-items: center;
-    }
+    font-size: 1.2;
+}
 
 .ponuka h3{
     color:#4d468f;
@@ -151,11 +159,163 @@ h3 {
 
 .ponuka p{
     color:black;
+    font-weight: 400;
 }
 
 .ponuka,
 .cestuj,
+.chatuj,
 .zazitkuj{
     margin: 1rem;
     padding: 1rem;
 }
+
+.hlavna-poradie{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+}
+
+
+@media screen and (min-width: 300px) {
+
+.obal{
+    width: auto;
+}
+}
+
+@media screen and (min-width: 480px) {
+
+.tlacitka {
+flex-direction: row;
+}
+
+.tlacitka a {
+margin: 1rem 1rem 0 0;
+}
+
+.hlavna{
+min-height: 250px;
+}
+
+.tlacitka a {
+    transform:scale(1);
+    transition: scale 3s ease-in 2s;
+}
+
+.tlacitka a:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 650px) {
+    
+nav {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+}
+
+.nav a{
+    flex-basis:auto;
+    padding:1rem;
+}
+
+.hlavna{
+    min-height:420px;
+}
+
+.tlacitka a {
+    font-size: 1rem;
+}
+
+.ponuka{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.obal{
+    width:fit-content;
+}
+
+.hlavna-poradie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cestuj,
+.chatuj,
+.zazitkuj {
+    margin: 1rem; 
+}
+
+.tlacitka a {
+    transform:scale(1);
+    transition: scale 3s ease-in 2s;
+}
+
+.tlacitka a:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 860px) {
+
+.hlavna {
+    position: relative;
+    min-height: 400px;
+}
+
+.hlavna-cast {
+    width: 50%;
+}
+
+.hlavna img {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+.tlacitka a {
+    transform:scale(1);
+    transition: scale 3s ease-in 2s;
+}
+
+.tlacitka a:hover {
+    transform: scale(1.2);
+}
+
+
+/*tu som skusila animaciu*/
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+}
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+
+  }
+
+}
+
+/* ospravedlnujem sa ze odovzdavam az teraz, dufam, ze to bude v poriadku a tesim sa na komentare :)*/
