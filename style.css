@@ -14,174 +14,147 @@ html { box-sizing: border-box; }
 */
 
 body {
-    padding: 0;
-    margin: 0;
-    background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+padding: 0;
+margin: 0;
+background-color: #e5e5e5;
+font-family: "Source Sans Pro", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+max-width:960px;
+margin: 0 auto;
+background: white;
+box-shadow: 0 0 20px rgb(0 0 0 / 20%);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
 
 .obal {
-    width:auto;
-}
-
-nav a {
-    text-decoration: none;
-    flex-basis: 50%;
-    padding: 1rem;
-    color: #25133d;
+width:auto;
 }
 
 nav {
-    font-size: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
+font-size: 1rem;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+}
+
+nav a {
+text-decoration: none;
+flex-basis: 50%;
+padding: 1rem;
+color: #25133d;
 }
 
 nav a:first-child {
-    font-weight: 700;
-}
-
-footer {
-    background-color:#6a528a; /*tu sa mi viac paci tato farba*/
-    color:#e5e5e5;
-    text-align: center;
+font-weight: 700;
 }
 
 nav a:hover {
-    background-color: #25133d;
-    color:#e5e5e5;
+background-color: #25133d;
+color:#e5e5e5;
 }
 
 
 .hlavna{
-    background-image: url(images/pozadi.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: left;
-    color: #f1e1fa;
-    padding: 1.2rem;
+background-image: linear-gradient(to left,#25133d2a,#48418e), url("images/pozadi.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-position-x: left;
+color: #f1e1fa;
+padding: 1.2rem;
 }
 
-.hlavna,
-h1,
-h2{
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.mobil {
-    display: none;
-    
-}
-
-.tlacitka {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: auto;
-    margin:1rem;
-    padding: 1rem;
-}
-
-.tlacitka a {
-    text-decoration: none;
-    color: #f1e1fa;
-    border: 0.1rem solid #f1e1fa;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
-    text-align: center;
-    background-color:transparent;
-    font-weight: 400;
-    background-color: #6a528a; /*tu sa mi viac paci tato farba*/
-}
-
-.tlacitko-1{
-    margin:1rem;
-    padding-bottom: 0.5rem;
-    height: 60px;
-}
-
-.tlacitko-2{
-    margin: 1rem;
-    height: 60px;
-}
-
-a:hover{
-    background-color:transparent;
-    border:0.1rem solid #f1e1fa;
-}
 
 h1 {
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin: 0;
+font-size: 3.5rem;
+font-weight: 400;
+margin: 0;
 }
 
 h2 {
-    font-weight: 300;
-    line-height: 1.5;
+font-weight: 300;
+line-height: 1.5;
 }
 
 h3 {
-    margin: 0.6rem;
+margin: 0.6rem;
 }
 
+.mobil {
+display: none;
+}
+
+.tlacitka {
+display: flex;
+flex-direction: column;
+margin:1rem;
+padding: 1rem;
+}
+
+.tlacitka a {
+text-decoration: none;
+color: #f1e1fa;
+border: 2px solid #f1e1fa;
+border-radius: 20px;
+padding: 1.5rem;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
+text-align: center;
+background-color:transparent;
+font-weight: 400;
+background-color: #6a528a; /*tu sa mi viac paci tato farba*/
+}
+
+
+.tlacitko-1{
+margin:0.5rem;
+}
+
+
 .ponuka{
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    font-size: 1.2;
+text-align: center;
+font-size: 1.2;
+padding: 1rem;
+margin:0rem;
 }
 
 .ponuka h3{
-    color:#4d468f;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 1.5;
+color:#4d468f;
+font-family: "Source Sans Pro", sans-serif;
+font-weight: 600;
+font-size: 2rem;
+line-height: 1.5;
 }
 
 .ponuka p{
-    color:black;
-    font-weight: 400;
-}
-
-.ponuka,
-.cestuj,
-.chatuj,
-.zazitkuj{
-    margin: 1rem;
-    padding: 1rem;
+color:black;
+font-weight: 400;
 }
 
 .hlavna-poradie{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+}
+
+footer {
+background-color:#6a528a; /*tu sa mi viac paci tato farba*/
+color:#e5e5e5;
+text-align: center;
 }
 
 
 @media screen and (min-width: 300px) {
 
 .obal{
-    width: auto;
+width: auto;
 }
+
 }
 
 @media screen and (min-width: 480px) {
@@ -192,130 +165,120 @@ flex-direction: row;
 
 .tlacitka a {
 margin: 1rem 1rem 0 0;
+    width: 35%;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+
+.tlacitka a {
+transform:scale(1);
+transition: scale 3s ease-in 2s;
+}
+
+.tlacitka a:hover {
+transform: scale(1.1);
 }
 
 .hlavna{
 min-height: 250px;
 }
 
-.tlacitka a {
-    transform:scale(1);
-    transition: scale 3s ease-in 2s;
-}
-
-.tlacitka a:hover {
-    transform: scale(1.1);
 }
 
 @media screen and (min-width: 650px) {
     
 nav {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    align-self: flex-start;
+flex-wrap: nowrap;
+justify-content: flex-start;
+margin: 0;
 }
 
 .nav a{
-    flex-basis:auto;
-    padding:1rem;
+flex-basis:auto;
+padding:1rem;
 }
 
 .hlavna{
-    min-height:420px;
-}
-
-.tlacitka a {
-    font-size: 1rem;
-}
-
-.ponuka{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-}
-
-h1 {
-    font-size: 3.5rem;
-}
-
-h2{
-    font-size: 2rem;
-}
-
-.obal{
-    width:fit-content;
+min-height:400px;
 }
 
 .hlavna-poradie{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.tlacitka a {
+font-size: 1rem;
+}
+
+.tlacitka a {
+transform:scale(1);
+transition: scale 3s ease-in 2s;
+}
+
+.tlacitka a:hover {
+transform: scale(1.1);
+}
+
+.ponuka{
+display: flex;
+text-align: center;
+}
+
+h1 {
+font-size: 3.5rem;
+}
+
+h2{
+font-size: 2rem;
+}
+
+.obal{
+max-width: 960px;
 }
 
 .cestuj,
 .chatuj,
 .zazitkuj {
-    margin: 1rem; 
+margin: 1rem; 
 }
-
-.tlacitka a {
-    transform:scale(1);
-    transition: scale 3s ease-in 2s;
 }
-
-.tlacitka a:hover {
-    transform: scale(1.1);
-}
-
 
 @media screen and (min-width: 860px) {
 
 .hlavna {
-    position: relative;
-    min-height: 400px;
+position: relative;
+min-height: 400px;
 }
 
 .hlavna-cast {
-    width: 50%;
+width: 50%;
 }
 
 .hlavna img {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right:0;
+display: inline-block;
+position: absolute;
+bottom: 0;
+right:0;
+}
+
+.tlacitka{
+display:flex;
+margin: 0;
 }
 
 .tlacitka a {
-    transform:scale(1);
-    transition: scale 3s ease-in 2s;
+transform:scale(1);
+transition: scale 3s ease-in 2s;
 }
 
 .tlacitka a:hover {
-    transform: scale(1.2);
+transform: scale(1.2);
+}
 }
 
 
-/*tu som skusila animaciu*/
 
-h1 {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-}
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-
-  }
-
-}
-
-/* ospravedlnujem sa ze odovzdavam az teraz, dufam, ze to bude v poriadku a tesim sa na komentare :)*/
+/* skusila som opravit vsetko co som vedela a mala v komentároch*/
